@@ -1,0 +1,61 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="AlmosaferAPITest">
+	
+	
+	    <parameter name="baseUri" value="https://www.almosafer.com" />
+        <parameter name="tokenEndpoint" value="skdjfh73273$7268u2j89s" />
+        <parameter name="cityId" value="9" />
+        <parameter name="checkIn" value="2024-02-12" />
+        <parameter name="checkOut" value="2024-02-22" />
+        <parameter name="apiEndpoint" value="https://www.almosafer.com/api/accommodation/property/search" />
+        
+        
+        <parameter name="baseUriGet" value="https://www.almosafer.com" />
+        <parameter name="tokenEndpointGet" value="skdjfh73273$7268u2j89s" />
+        
+        
+        <parameter name="adultsCountGet" value="1" />
+        <parameter name="childrenAgesGet" value="1" /> 
+        <parameter name="checkInGet" value="2024-02-15" />
+        <parameter name="checkOutGet" value="2024-02-25" />
+        <parameter name="placeIdGet" value="ChIJmd5kZkdvABURmU4mUQdbKI0" />
+        
+        <parameter name="apiEndpointGet" value="https://www.almosafer.com/api/enigma/search/async" />
+        <parameter name="apiEndpointResultGet" value="https://www.almosafer.com/api/enigma/search/poll" />
+ 
+	
+    <test name="AlmosaferAPITest">
+        <parameter name="baseUri" value="https://www.almosafer.com" />
+        <parameter name="tokenEndpoint" value="skdjfh73273$7268u2j89s" />
+        <parameter name="cityId" value="9" />
+        <parameter name="checkIn" value="2024-02-12" />
+        <parameter name="checkOut" value="2024-02-22" />
+        <parameter name="apiEndpoint" value="https://www.almosafer.com/api/accommodation/property/search" />
+ 
+
+        <classes>
+            <class name="AlmosaferAPIPOST"/> 
+        </classes>
+    </test>
+
+     <test name="TEST2">
+        <parameter name="baseUri" value="https://www.almosafer.com" />
+        <parameter name="tokenEndpoint" value="skdjfh73273$7268u2j89s" />
+        
+        
+        <parameter name="adultsCount" value="1" />
+        <parameter name="childrenAges" value="1" /> 
+        <parameter name="checkIn" value="2024-02-15" />
+        <parameter name="checkOut" value="2024-02-25" />
+        <parameter name="placeId" value="ChIJmd5kZkdvABURmU4mUQdbKI0" />
+        
+        <parameter name="apiEndpoint" value="https://www.almosafer.com/api/enigma/search/async" />
+        <parameter name="apiEndpointResult" value="https://www.almosafer.com/api/enigma/search/poll" />
+        <classes>
+            <class name="AlmosaferAPIGET"/>
+        </classes>
+     </test>
+    
+    
+</suite>
+										
